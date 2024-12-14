@@ -2,7 +2,7 @@
 
 Data profiling was done using bare looks and the Ipython notebook found on this folder. Based on the findings, data modeling descisions has been made.
 
-iPython notebook - "Data_profiling.ipynb"
+iPython notebook - "Data_profiling.ipynb" <br>
 Dataset - ""supermarket_sales - Sheet1.csv"
 
 ## Datatypes:
@@ -13,13 +13,13 @@ Based on looking at the datatypes ingested by pandas, (below) given fields are o
 
 ![image info](./images/data_type.png)
 
-This can't be the only reason to club them all to the fact table, as some of those numerical fields may represent a dimension. For example, unit price reprsents the price of a product. So, we can condiser them as potential fields for fact table.
+This can't be the only reason to club them all to the fact table, as some of those numerical fields may represent a dimension. For example, unit price reprsents the price of a product. So, we can only consider these numerical fields as potential fields for fact table until we decide upon the dimensions.
 
 
 ## Dimension tables:
 **Findings**:
 - Based on general profiling, there are three potential dimension on this dataset - Branch, Customer, product. 
-- Only two information of customer is captured namely - Customer type and Gender. They have 4 unique values. Creating them as a dimension doesn't make sense as that table won't be true representation of a customer. These four are not the only customers that made the transaction, so representing fact table with only four customers is not a true represntation of data.
+- Only two information of customer is captured namely - Customer type and Gender. They have 4 unique values. Creating them as a dimension doesn't make sense as that table won't be true representation of a customer. These four are not the only customers that made the transaction, so representing fact table with only four customers is not a true representation of data.
 - There are 993 products represented here in the 1000 transaction, they can be considered as dimension. Though we can't confirm these 7 records with same product line and price as same product, for the sake fo simplicity and data availability, we will consider them as same.
 - There are 3 branches on three cities , they are a dimension
 
