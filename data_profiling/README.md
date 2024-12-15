@@ -21,6 +21,7 @@ This can't be the only reason to club them all to the fact table, as some of tho
 - Based on general profiling, there are three potential dimension on this dataset - Branch, Customer, product. 
 - Only two information of customer is captured namely - Customer type and Gender. They have 4 unique values. Creating them as a dimension doesn't make sense as that table won't be true representation of a customer. These four are not the only customers that made the transaction, so representing fact table with only four customers is not a true representation of data.
 - There are 993 products represented here in the 1000 transaction, they can be considered as dimension. Though we can't confirm these 7 records with same product line and price as same product, for the sake fo simplicity and data availability, we will consider them as same.
+- We can't confirm that unit price is same across the branches for unique product from the dataset. There may be a dynamic pricing, but due to the lack of identifier, we would consider same priced product as single product with same pricing across stores
 - There are 3 branches on three cities , they are a dimension
 
 ## Addittional findings:
