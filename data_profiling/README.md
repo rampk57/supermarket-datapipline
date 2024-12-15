@@ -24,7 +24,7 @@ This can't be the only reason to club them all to the fact table, as some of tho
 - We can't confirm that unit price is same across the branches for unique product from the dataset. There may be a dynamic pricing, but due to the lack of identifier, we would consider same priced product as single product with same pricing across stores
 - There are 3 branches on three cities , they are a dimension
 
-## Addittional findings:
+## Additional findings:
 - gross margin percentage is same for all the products, and naturally it align with the product rather than the transaction
 - Ratings should generally range from 0 to 10, and it can be used for business rule validation
 
