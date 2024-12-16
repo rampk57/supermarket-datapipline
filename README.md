@@ -25,3 +25,10 @@ Created three reporting queries with windowing function to answer below question
 
 ![image info](./local_pipeline/images/result-3.png)
 ![image info](./local_pipeline/images/plot-3.png)
+
+**Cloud deployment**
+
+I have came up with below architecture for automating this pipeline in GCP. I have also developed and tested this archicture, and the code for which are found in the folder cloud_deployment. 
+
+
+![image info](./cloud_deployment/images/cloud_deployment.png)
